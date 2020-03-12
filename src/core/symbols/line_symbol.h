@@ -299,6 +299,7 @@ protected:
 	        ObjectRenderables& output
 	) const;
 	
+public:
 	void shiftCoordinates(
 	        const VirtualPath& path,
 	        double main_shift,
@@ -306,6 +307,7 @@ protected:
 	        MapCoordVectorF& out_coords
 	) const;
 	
+protected:
 	/**
 	 * Creates flags and coords for a continuous line segment, and 
 	 * adds pointed line caps and mid symbol renderables to the output.

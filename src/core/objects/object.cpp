@@ -22,6 +22,7 @@
 #include "object.h"
 
 #include <algorithm>
+#include <array>
 #include <cmath>
 #include <cstddef>
 #include <iterator>
@@ -1125,6 +1126,87 @@ void PathObject::calcClosestPointOnPath(
 			}
 		}
 	}
+}
+
+std::shared_ptr<PathObject> PathObject::calcClosestPointOnBorder(
+        MapCoordF coord,
+        const PathCoord& path_coord,
+        float const in_distance_sq,
+        float& out_distance_sq,
+        PathCoord& out_path_coord) const
+{
+	Q_ASSERT(!isOutputDirty());  // implied by prerequisite to supply PathCoord
+	
+	if (!symbol || symbol->getType() != Symbol::Line)
+		return {};
+	
+	auto const& line_symbol = static_cast<LineSymbol const&>(*symbol);
+	if (!line_symbol.hasBorder())
+		return {};
+	
+	// As long as LineSymbol::shiftCoordinates() implicitly accounts for the
+	// per-border line width and shift, we need to offset that compensation
+	// in some cases: When the main line is visible and the border is not a
+	// continuous line, we want to match the edge of the main line. This may
+	// create artifacts in some corners, as happens to dashed borders as well.
+	auto const main_shift = 0.0005 * line_symbol.getLineWidth();
+	auto border_shifts = std::array<qreal, 2>{0, 0};
+	if (line_symbol.getBorder().isVisible())
+	{
+		border_shifts[0] = -main_shift;
+		if (line_symbol.getColor() && line_symbol.getBorder().dashed)
+			border_shifts[0] += 0.001 * line_symbol.getBorder().shift;
+	}
+	if (line_symbol.getRightBorder().isVisible())
+	{
+		border_shifts[1] = main_shift;
+		if (line_symbol.getColor() && line_symbol.getRightBorder().dashed)
+			border_shifts[1] -= 0.001 * line_symbol.getRightBorder().shift;
+	}
+	if (qIsNull(border_shifts[0]) && qIsNull(border_shifts[1]))
+		return {};
+	
+	auto const part = findPartForIndex(path_coord.index);
+	auto const split = SplitPathCoord::at(part->path_coords, path_coord.clen);
+	auto const offset_vector = [](auto vector) {
+		vector.normalize(); 
+		return vector; 
+	}(split.tangentVector().perpRight());
+	
+	auto bound = qreal(in_distance_sq);
+	auto selected_shift = qreal(0);
+	for (auto shift : border_shifts)
+	{
+		if (qIsNull(shift))
+		    continue;
+		
+		auto border_distance_sq = (path_coord.pos + shift * offset_vector).distanceSquaredTo(coord);
+		if (border_distance_sq < bound)
+		{
+			bound = border_distance_sq;
+			selected_shift = shift;
+		}
+	}
+	
+	if (qIsNull(selected_shift))
+		return {};
+	
+	// Cf. LineSymbol::createBorderLines
+	MapCoordVector border_coords;
+	border_coords.reserve(part->size());
+	MapCoordVectorF border_coords_f;
+	border_coords_f.reserve(part->size());
+	line_symbol.shiftCoordinates(*part, selected_shift, border_coords, border_coords_f);
+	std::transform(begin(border_coords), end(border_coords), begin(border_coords_f), begin(border_coords),
+	               [](auto coord, auto const& coord_f){
+		coord.setX(coord_f.x());
+		coord.setY(coord_f.y());
+		return coord;
+	});
+	
+	auto result = std::make_shared<PathObject>(Map::getUndefinedLine(), std::move(border_coords));
+	result->calcClosestPointOnPath(coord, out_distance_sq, out_path_coord);
+	return result;
 }
 
 void PathObject::calcClosestCoordinate(MapCoordF coord, float& out_distance_sq, MapCoordVector::size_type& out_index) const
@@ -2353,7 +2435,7 @@ int PathObject::isPointOnPath(MapCoordF coord, qreal tolerance, bool treat_areas
 	if (extended_selection && map && (symbol->getType() == Symbol::Line || symbol->getType() == Symbol::Combined))
 	{
 		// TODO: precalculate largest line extent for all symbols to move it out of this time critical method?
-		side_tolerance = qMax(side_tolerance, symbol->calculateLargestLineExtent());
+		side_tolerance += symbol->calculateLargestLineExtent();
 	}
 	
 	auto contained_types = symbol->getContainedTypes();
