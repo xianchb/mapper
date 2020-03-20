@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="576"/>
         <source>Could not write file: %1</source>
-        <translation>无法写入文件</translation>
+        <translation>无法写入文件: %1</translation>
     </message>
 </context>
 <context>
@@ -15,12 +15,12 @@
         <location filename="../src/gdal/gdal_image_reader.cpp" line="56"/>
         <location filename="../src/gdal/gdal_image_reader.cpp" line="143"/>
         <source>Failed to read image data: %1</source>
-        <translation type="unfinished"></translation>
+        <translation">无法读取图像数据: %1</translation>
     </message>
     <message>
         <location filename="../src/gdal/gdal_image_reader.cpp" line="112"/>
         <source>Unsupported raster data: %1</source>
-        <translation type="unfinished"></translation>
+        <translation ">不支持的栅格数据: %1</translation>
     </message>
 </context>
 <context>
@@ -30,7 +30,9 @@
         <source>Cannot open file
 %1:
 %2</source>
-        <translation>无法打开文件</translation>
+        <translation>无法打开文件
+%1:
+%2</translation>
     </message>
 </context>
 <context>
@@ -41,7 +43,10 @@
 %1
 
 %2</source>
-        <translation>无法打开文件</translation>
+        <translation>无法打开文件e:
+%1
+
+%2</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="649"/>
@@ -61,7 +66,7 @@
         <source>The scale of the imported data is 1:%1 which is different from this map&apos;s scale of 1:%2.
 
 Rescale the imported data?</source>
-        <translation>导入的数据比例为 1:%1, 与本地图比例 1:%2 不同。
+        <translation>导入的数据比例为 1:%1, 与本地图&apos;比例 1:%2 不同。
 
 重新缩放导入的数据吗？</translation>
     </message>
@@ -71,28 +76,28 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="577"/>
         <source>OCD files of version %1 are not supported!</source>
-        <translation>未支持版本 %1 的 OCD 文件 ！</translation>
+        <translation>未支持版本 %1 的 OCD文件！</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="662"/>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="673"/>
         <source>Coordinates are adjusted to fit into the OCAD 8 drawing area (-2 m ... 2 m).</source>
-        <translation>已调整座标，以配合 OCAD 8 的绘图区大小 (-2 m ... 2 m).</translation>
+        <translation>已调整坐标，以配合 OCAD 8 的绘图区大小 (-2 m ... 2 m).</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="683"/>
         <source>Some coordinates remain outside of the OCAD 8 drawing area. They might be unreachable in OCAD.</source>
-        <translation type="unfinished"></translation>
+        <translation>一些坐标仍在OCAD8绘图区域之外。在OCAD中可能无法访问它们。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="717"/>
         <source>The georeferencing cannot be saved in OCD version 8.</source>
-        <translation type="unfinished"></translation>
+        <translation>地理参考不能保存在OCD版本8中。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="767"/>
         <source>The map contains more than 24 spot colors which is not supported by OCD version 8.</source>
-        <translation type="unfinished"></translation>
+        <translation>地图包含24种以上的专色，这是OCD版本8不支持的。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="773"/>
