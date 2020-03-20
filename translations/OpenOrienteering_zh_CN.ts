@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="576"/>
         <source>Could not write file: %1</source>
-        <translation>无法写入文件</translation>
+        <translation>无法写入文件: %1</translation>
     </message>
 </context>
 <context>
@@ -15,12 +15,12 @@
         <location filename="../src/gdal/gdal_image_reader.cpp" line="56"/>
         <location filename="../src/gdal/gdal_image_reader.cpp" line="143"/>
         <source>Failed to read image data: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">加载图片失败: %1</translation>
     </message>
     <message>
         <location filename="../src/gdal/gdal_image_reader.cpp" line="112"/>
         <source>Unsupported raster data: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">不支持的栅格数据: %1</translation>
     </message>
 </context>
 <context>
@@ -30,7 +30,9 @@
         <source>Cannot open file
 %1:
 %2</source>
-        <translation>无法打开文件</translation>
+        <translation>无法打开文件
+%1:
+%2</translation>
     </message>
 </context>
 <context>
@@ -41,7 +43,10 @@
 %1
 
 %2</source>
-        <translation>无法打开文件</translation>
+        <translation>无法打开文件:
+%1
+
+%2</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="649"/>
@@ -61,7 +66,7 @@
         <source>The scale of the imported data is 1:%1 which is different from this map&apos;s scale of 1:%2.
 
 Rescale the imported data?</source>
-        <translation>导入的数据比例为 1:%1, 与本地图比例 1:%2 不同。
+        <translation>导入的数据比例为 1:%1, 与本地图&apos;比例 1:%2 不同。
 
 重新缩放导入的数据吗？</translation>
     </message>
@@ -71,54 +76,54 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="577"/>
         <source>OCD files of version %1 are not supported!</source>
-        <translation>未支持版本 %1 的 OCD 文件 ！</translation>
+        <translation>未支持版本 %1 的 OCD 文件！</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="662"/>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="673"/>
         <source>Coordinates are adjusted to fit into the OCAD 8 drawing area (-2 m ... 2 m).</source>
-        <translation>已调整座标，以配合 OCAD 8 的绘图区大小 (-2 m ... 2 m).</translation>
+        <translation>已调整坐标，以配合 OCAD 8 的绘图区大小 (-2 m ... 2 m).</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="683"/>
         <source>Some coordinates remain outside of the OCAD 8 drawing area. They might be unreachable in OCAD.</source>
-        <translation type="unfinished"></translation>
+        <translation>一些坐标仍在OCAD8绘图区域之外。在OCAD中可能无法访问它们。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="717"/>
         <source>The georeferencing cannot be saved in OCD version 8.</source>
-        <translation type="unfinished"></translation>
+        <translation>地理参考不能保存在OCD版本8中。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="767"/>
         <source>The map contains more than 24 spot colors which is not supported by OCD version 8.</source>
-        <translation type="unfinished"></translation>
+        <translation">地图包含24种以上的专色，这是OCD版本8不支持的。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="773"/>
         <source>The map contains more than 256 colors which is not supported by OCD version 8.</source>
-        <translation type="unfinished"></translation>
+        <translation">地图包含超过256种颜色，这是OCD版本8不支持的。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="817"/>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="829"/>
         <source>Invalid spot color.</source>
-        <translation type="unfinished"></translation>
+        <translation>无效的专色。</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="2462"/>
         <source>Unable to save correct position of missing template: &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation">无法保存丢失模板的正确位置：&quot;%1&quot;</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="2478"/>
         <source>Unable to export template: file type of &quot;%1&quot; is not supported yet</source>
-        <translation type="unfinished">无法导出模板:&quot;%1&quot;的文件类型尚不支持</translation>
+        <translation">无法导出模板：文件类型&quot;%1&quot;尚不支持</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="2727"/>
         <source>Text truncated at &apos;|&apos;): %1</source>
-        <translation type="unfinished"></translation>
+        <translation">文本截短于&apos;|&apos;): %1</translation>
     </message>
 </context>
 <context>
@@ -2916,7 +2921,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="329"/>
         <source>&amp;New</source>
-        <translation>与新</translation>
+        <translation>&amp;新建</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="332"/>
@@ -2926,7 +2931,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="336"/>
         <source>&amp;Open...</source>
-        <translation>与打开......</translation>
+        <translation>&amp;打开...</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="339"/>
@@ -2936,27 +2941,27 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="343"/>
         <source>Open &amp;recent</source>
-        <translation>开放与最近</translation>
+        <translation>打开&amp;最近</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="355"/>
         <source>&amp;Save</source>
-        <translation>与保存</translation>
+        <translation>&amp;保存</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="361"/>
         <source>Save &amp;as...</source>
-        <translation>保存与作为...</translation>
+        <translation>另存&amp;为...</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="364"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl + Shift + S</translation>
+        <translation>Ctrl+Shift+S键</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="370"/>
         <source>Settings...</source>
-        <translation>设置。。。</translation>
+        <translation>设置...</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="375"/>
@@ -2972,7 +2977,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="382"/>
         <source>E&amp;xit</source>
-        <translation>E &amp; xit</translation>
+        <translation>退&amp;出</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="385"/>
@@ -2982,7 +2987,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="391"/>
         <source>&amp;File</source>
-        <translation>与文件</translation>
+        <translation>&amp;文件</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="410"/>
@@ -3022,7 +3027,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="443"/>
         <source>&amp;Help</source>
-        <translation>与帮助</translation>
+        <translation>&amp;帮助</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="649"/>
@@ -3610,12 +3615,12 @@ Import the data anyway?</source>
         <location filename="../src/gui/widgets/color_list_widget.cpp" line="113"/>
         <location filename="../src/gui/widgets/template_list_widget.cpp" line="275"/>
         <source>&amp;Edit</source>
-        <translation>与编辑</translation>
+        <translation>&amp;编辑</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1141"/>
         <source>&amp;View</source>
-        <translation>与视图</translation>
+        <translation>&amp;视图</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1165"/>
@@ -3625,22 +3630,22 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1172"/>
         <source>&amp;Tools</source>
-        <translation>与工具</translation>
+        <translation>&amp;工具</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1225"/>
         <source>Sy&amp;mbols</source>
-        <translation>Sy &amp; mbols</translation>
+        <translation>对&amp;象</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1207"/>
         <source>M&amp;ap</source>
-        <translation>购 ap</translation>
+        <translation>地&amp;图</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1237"/>
         <source>&amp;Templates</source>
-        <translation>与模板</translation>
+        <translation>&amp;模板</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1293"/>
