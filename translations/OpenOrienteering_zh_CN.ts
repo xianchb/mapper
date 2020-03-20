@@ -193,7 +193,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/about_dialog.cpp" line="180"/>
         <source>This program is free software: you can redistribute it and/or modify it under the terms of the &lt;a %1&gt;GNU General Public License (GPL), version&amp;nbsp;3&lt;/a&gt;, as published by the Free Software Foundation.</source>
-        <translation>此程序是免费的软件︰ 你可以将它重新分发和/或修改根据 &lt;a %1&gt; GNU 通用公共许可证 (GPL)，版本 3&lt;/a&gt; 的条款，如由自由软件基金会出版。</translation>
+        <translation>此程序是免费软件：您可以根据免费软件基金会发布的&lt;a %1&gt;GNU通用公共许可证（GPL），版本&amp;nbsp;3&lt;/a&gt;的条款重新分发或修改它。</translation>
     </message>
     <message>
         <location filename="../src/gui/about_dialog.cpp" line="185"/>
