@@ -15,12 +15,12 @@
         <location filename="../src/gdal/gdal_image_reader.cpp" line="56"/>
         <location filename="../src/gdal/gdal_image_reader.cpp" line="143"/>
         <source>Failed to read image data: %1</source>
-        <translation">无法读取图像数据: %1</translation>
+        <translation>无法读取图像数据: %1</translation>
     </message>
     <message>
         <location filename="../src/gdal/gdal_image_reader.cpp" line="112"/>
         <source>Unsupported raster data: %1</source>
-        <translation ">不支持的栅格数据: %1</translation>
+        <translation>不支持的栅格数据: %1</translation>
     </message>
 </context>
 <context>
@@ -118,7 +118,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="2478"/>
         <source>Unable to export template: file type of &quot;%1&quot; is not supported yet</source>
-        <translation type="unfinished">无法导出模板:&quot;%1&quot;的文件类型尚不支持</translation>
+        <translation">无法导出模板:&quot;%1&quot;的文件类型尚不支持</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="2727"/>
@@ -136,12 +136,12 @@ Rescale the imported data?</source>
     <message>
         <location filename="../packaging/translations.cpp" line="11"/>
         <source>Software for drawing orienteering maps</source>
-        <translation>定向运动地图图绘制软件</translation>
+        <translation>定向运动制图软件</translation>
     </message>
     <message>
         <location filename="../src/fileformats/ocd_file_export.cpp" line="548"/>
         <source>Encoding &apos;%1&apos; is not available. Check the settings.</source>
-        <translation type="unfinished">编码 &apos;%1&apos; 不是可用的。请检查设置。</translation>
+        <translation type="unfinished">编码&apos;%1&apos;不是可用的，请检查设置。</translation>
     </message>
     <message>
         <location filename="../src/gdal/ogr_file_format.cpp" line="2061"/>
