@@ -3387,7 +3387,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="963"/>
         <source>Set custom zoom factor...</source>
-        <translation>设置自定义的缩放因子......</translation>
+        <translation>设置自定义的缩放倍数...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="970"/>
@@ -4161,12 +4161,12 @@ Rescale the imported data?</source>
     </message>
     <message>
         <source>Copied %1 object(s)</source>
-        <translation type="vanished">复制 %1 对象</translation>
+        <translation type="vanished">复制%1对象</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1851"/>
         <source>There are no objects in clipboard which could be pasted!</source>
-        <translation>可以粘贴的剪贴板中没有对象 ！</translation>
+        <translation>可以粘贴的剪贴板中没有对象！</translation>
     </message>
     <message>
         <source>Pasted %1 object(s)</source>
@@ -4175,12 +4175,12 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1949"/>
         <source>Set custom zoom factor</source>
-        <translation>设置自定义的缩放因子</translation>
+        <translation>设置自定义的缩放倍数</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1949"/>
         <source>Zoom factor:</source>
-        <translation>缩放因子︰</translation>
+        <translation>缩放倍数︰</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="2023"/>
