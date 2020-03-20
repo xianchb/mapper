@@ -2077,7 +2077,7 @@ Rescale the imported data?</source>
         <location filename="../src/gui/georeferencing_dialog.cpp" line="224"/>
         <location filename="../src/gui/select_crs_dialog.cpp" line="93"/>
         <source>&amp;Coordinate reference system:</source>
-        <translation>与参考坐标系︰</translation>
+        <translation>&amp;参考坐标系：</translation>
     </message>
     <message>
         <location filename="../src/gui/georeferencing_dialog.cpp" line="231"/>
@@ -2528,7 +2528,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/fileformats/file_import_export.cpp" line="245"/>
         <source>Click the red template name(s) in the Templates -&gt; Template setup window to locate the template file name(s).</source>
-        <translation>单击模板-模板安装窗口 &gt; 查找模板文件名称中的红色模板名称。</translation>
+        <translation>单击“底图-&gt;底图设置”窗口中的红色底图名称以找到底图文件名。</translation>
     </message>
     <message>
         <source>This file uses an obsolete format. Support for this format is to be removed from this program soon. To be able to open the file in the future, save it again.</source>
@@ -2997,7 +2997,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="425"/>
         <source>Open &amp;Manual</source>
-        <translation>打开&amp;手册</translation>
+        <translation>打开&amp;帮助手册</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="427"/>
@@ -3007,7 +3007,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="431"/>
         <source>&amp;About %1</source>
-        <translation>&amp; 大约 %1</translation>
+        <translation>&amp;关于%1</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="433"/>
@@ -3017,12 +3017,12 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="436"/>
         <source>About &amp;Qt</source>
-        <translation>关于与 qt 离散度</translation>
+        <translation>关于&amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="438"/>
         <source>Show information about Qt</source>
-        <translation>显示有关 qt 离散度的信息</translation>
+        <translation>显示有关Qt的信息</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="443"/>
@@ -3273,21 +3273,23 @@ for reading.</source>
         <source>Cannot save file
 %1:
 %2</source>
-        <translation>无法保存文件 %1: %2</translation>
+        <translation>无法保存文件
+%1:
+%2</translation>
     </message>
     <message>
         <source>Nothing to import.</source>
-        <translation type="vanished">没有要导入。</translation>
+        <translation>没有要导入。</translation>
     </message>
     <message>
         <source>Question</source>
-        <translation type="vanished">问题</translation>
+        <translation>问题</translation>
     </message>
     <message>
         <source>The scale of the imported data is 1:%1 which is different from this map&apos;s scale of 1:%2.
 
 Rescale the imported data?</source>
-        <translation type="vanished">导入的数据规模 1:%1 是从 1:%2 本地图规模不同。
+        <translation>导入的数据比例尺 1:%1 是从 1:%2 本地图比例尺不同。
 
 重新缩放导入的数据吗？</translation>
     </message>
@@ -3425,7 +3427,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="979"/>
         <source>Change map scale...</source>
-        <translation>更改地图规模......</translation>
+        <translation>更改地图比例尺...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="979"/>
@@ -3435,12 +3437,12 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="981"/>
         <source>Map notes...</source>
-        <translation>注意到地图...</translation>
+        <translation>地图说明...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="983"/>
         <source>Template setup window</source>
-        <translation>模板安装程序窗口</translation>
+        <translation>底图设置窗口</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="983"/>
@@ -3450,7 +3452,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="986"/>
         <source>Open template...</source>
-        <translation>打开模板...</translation>
+        <translation>导入底图...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="961"/>
@@ -3707,7 +3709,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="978"/>
         <source>Georeferencing...</source>
-        <translation>小基......</translation>
+        <translation>参考坐标系...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="980"/>
@@ -3722,7 +3724,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="987"/>
         <source>Reopen template...</source>
-        <translation>重新打开模板...</translation>
+        <translation>重新导入底图...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="989"/>
@@ -4018,27 +4020,27 @@ because saving as %2 (.%3) is not supported.</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="972"/>
         <source>Symbol set ID...</source>
-        <translation type="unfinished"></translation>
+        <translation>符号集编号</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="972"/>
         <source>Edit the symbol set ID</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑符号集编号</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="974"/>
         <source>Load CRT file...</source>
-        <translation type="unfinished"></translation>
+        <translation>加载CRT文件...</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="974"/>
         <source>Assign new symbols by cross-reference table</source>
-        <translation type="unfinished"></translation>
+        <translation>按对照表指定新符号</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="4208"/>
         <source>Nothing to import.</source>
-        <translation type="unfinished">没有要导入。</translation>
+        <translation type="unfinished">没有被导入。</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="4220"/>
@@ -4223,7 +4225,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="2116"/>
         <source>OK</source>
-        <translation>还行</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="2156"/>
