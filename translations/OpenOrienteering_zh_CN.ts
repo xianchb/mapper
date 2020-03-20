@@ -2987,7 +2987,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="391"/>
         <source>&amp;File</source>
-        <translation>与文件</translation>
+        <translation>&amp;文件</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="410"/>
@@ -2997,7 +2997,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="425"/>
         <source>Open &amp;Manual</source>
-        <translation>打开 &amp; 手册</translation>
+        <translation>打开 &amp;手册</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="427"/>
@@ -3027,7 +3027,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="443"/>
         <source>&amp;Help</source>
-        <translation>与帮助</translation>
+        <translation>&amp;帮助</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="649"/>
@@ -3615,12 +3615,12 @@ Import the data anyway?</source>
         <location filename="../src/gui/widgets/color_list_widget.cpp" line="113"/>
         <location filename="../src/gui/widgets/template_list_widget.cpp" line="275"/>
         <source>&amp;Edit</source>
-        <translation>与编辑</translation>
+        <translation>&amp;编辑</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1141"/>
         <source>&amp;View</source>
-        <translation>与视图</translation>
+        <translation>&amp;视图</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1165"/>
@@ -3630,22 +3630,22 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1172"/>
         <source>&amp;Tools</source>
-        <translation>与工具</translation>
+        <translation>&amp;工具</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1225"/>
         <source>Sy&amp;mbols</source>
-        <translation>Sy &amp; mbols</translation>
+        <translation>对&amp;象</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1207"/>
         <source>M&amp;ap</source>
-        <translation>购 ap</translation>
+        <translation>地&amp;图</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1237"/>
         <source>&amp;Templates</source>
-        <translation>与模板</translation>
+        <translation>&amp;模板</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1293"/>
