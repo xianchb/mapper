@@ -2921,17 +2921,17 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="329"/>
         <source>&amp;New</source>
-        <translation>与新</translation>
+        <translation>&amp;新建</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="332"/>
         <source>Create a new map</source>
-        <translation>创建一个新的映射</translation>
+        <translation>创建一个新的地图</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="336"/>
         <source>&amp;Open...</source>
-        <translation>与打开......</translation>
+        <translation>&amp;打开...</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="339"/>
@@ -2941,27 +2941,27 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="343"/>
         <source>Open &amp;recent</source>
-        <translation>开放与最近</translation>
+        <translation>打开&amp;最近</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="355"/>
         <source>&amp;Save</source>
-        <translation>与保存</translation>
+        <translation>&amp;保存</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="361"/>
         <source>Save &amp;as...</source>
-        <translation>保存与作为...</translation>
+        <translation>另存&amp;为...</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="364"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl + Shift + S</translation>
+        <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="370"/>
         <source>Settings...</source>
-        <translation>设置。。。</translation>
+        <translation>设置...</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="375"/>
@@ -2977,7 +2977,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="382"/>
         <source>E&amp;xit</source>
-        <translation>E &amp; xit</translation>
+        <translation>退&amp;出</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="385"/>
@@ -2997,7 +2997,7 @@ Rescale the imported data?</source>
     <message>
         <location filename="../src/gui/main_window.cpp" line="425"/>
         <source>Open &amp;Manual</source>
-        <translation>打开 &amp;手册</translation>
+        <translation>打开&amp;手册</translation>
     </message>
     <message>
         <location filename="../src/gui/main_window.cpp" line="427"/>
@@ -3355,17 +3355,17 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="939"/>
         <source>Cu&amp;t</source>
-        <translation>Cu&amp;t</translation>
+        <translation>剪&amp;切</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="941"/>
         <source>C&amp;opy</source>
-        <translation>C 与复制</translation>
+        <translation>&amp;复制</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="943"/>
         <source>&amp;Paste</source>
-        <translation>与粘贴</translation>
+        <translation>&amp;粘贴</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="959"/>
@@ -3625,7 +3625,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1165"/>
         <source>Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>工具栏</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1172"/>
@@ -3742,7 +3742,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="997"/>
         <source>Draw free-handedly</source>
-        <translation>单枪匹马的自由绘制</translation>
+        <translation>自由绘制</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="998"/>
@@ -4463,7 +4463,7 @@ selected</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="956"/>
         <source>Pan</source>
-        <translation>潘</translation>
+        <translation>拖动</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="968"/>
@@ -4789,32 +4789,32 @@ selected</source>
     <message>
         <location filename="../src/gui/map/map_find_feature.cpp" line="53"/>
         <source>&amp;Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;查找..</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_find_feature.cpp" line="61"/>
         <source>Find &amp;next</source>
-        <translation type="unfinished"></translation>
+        <translation>查找&amp;下一个</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_find_feature.cpp" line="92"/>
         <source>Find objects</source>
-        <translation type="unfinished"></translation>
+        <translation">查找对象</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_find_feature.cpp" line="99"/>
         <source>&amp;Find next</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;查找下一个</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_find_feature.cpp" line="102"/>
         <source>Find &amp;all</source>
-        <translation type="unfinished"></translation>
+        <translation>查找&amp;全部</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_find_feature.cpp" line="105"/>
         <source>Query editor</source>
-        <translation type="unfinished"></translation>
+        <translation>查找编辑器</translation>
     </message>
 </context>
 <context>
