@@ -1083,7 +1083,7 @@ Rescale the imported data?</source>
         <location filename="../src/tools/draw_path_tool.cpp" line="1160"/>
         <location filename="../src/tools/draw_rectangle_tool.cpp" line="730"/>
         <source>&lt;b&gt;Dash points on.&lt;/b&gt; </source>
-        <translation>&lt;b&gt;破折号点。&lt;/b&gt; </translation>
+        <translation>&lt;b&gt;实点。&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/tools/draw_path_tool.cpp" line="1168"/>
@@ -1156,7 +1156,7 @@ Rescale the imported data?</source>
         <location filename="../src/tools/draw_path_tool.cpp" line="109"/>
         <source>Dash</source>
         <comment>Drawing dash points</comment>
-        <translation>短划线</translation>
+        <translation>添加实点</translation>
     </message>
     <message>
         <location filename="../src/tools/draw_path_tool.cpp" line="112"/>
@@ -1273,7 +1273,7 @@ Rescale the imported data?</source>
         <location filename="../src/tools/draw_rectangle_tool.cpp" line="93"/>
         <source>Dash</source>
         <comment>Drawing dash points</comment>
-        <translation>短划线</translation>
+        <translation>添加实点</translation>
     </message>
     <message>
         <location filename="../src/tools/draw_rectangle_tool.cpp" line="96"/>
@@ -1368,7 +1368,7 @@ Rescale the imported data?</source>
         <location filename="../src/tools/edit_point_tool.cpp" line="540"/>
         <source>Toggle dash</source>
         <comment>Toggle dash points</comment>
-        <translation>切换破折号</translation>
+        <translation>切换实点</translation>
     </message>
     <message>
         <location filename="../src/tools/edit_point_tool.cpp" line="719"/>
