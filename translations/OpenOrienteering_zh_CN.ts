@@ -3793,7 +3793,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1021"/>
         <source>Unify areas</source>
-        <translation>合并领域</translation>
+        <translation>合并区域<</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1022"/>
@@ -3813,7 +3813,7 @@ Import the data anyway?</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1029"/>
         <source>Cut away</source>
-        <translation>切掉了</translation>
+        <translation>切掉</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="1030"/>
@@ -4406,7 +4406,7 @@ selected</source>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="3685"/>
         <source>Merge this part with</source>
-        <translation>合并与这部分</translation>
+        <translation>与这部分合并</translation>
     </message>
     <message>
         <location filename="../src/gui/map/map_editor.cpp" line="3692"/>
@@ -8493,7 +8493,7 @@ The maximum supported version is %2.</source>
         <location filename="../src/tools/tool_helpers.cpp" line="627"/>
         <source>%1 m</source>
         <comment>meter</comment>
-        <translation>%1 m</translation>
+        <translation>%1 米</translation>
     </message>
 </context>
 <context>
